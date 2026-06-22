@@ -16,6 +16,9 @@ func main() {
 	mux.HandleFunc("/count", asciiweb.Count)
 	mux.HandleFunc("/calculate", asciiweb.Calculate)
 	mux.HandleFunc("/agent", asciiweb.Agent)
+	mux.HandleFunc("/dashboard", asciiweb.Dashboard)
+	mux.HandleFunc("/legacy", asciiweb.Legacy)
+	mux.HandleFunc("/v2", asciiweb.V2)
 
 
 	fmt.Println("server is running on http://localhost:8080")
